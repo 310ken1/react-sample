@@ -1,7 +1,7 @@
 "use client";
 
 import useLocalStorage from "@/hooks/useLocalStorage";
-import { Button, Form } from "react-bootstrap";
+import { Button, Container, Form } from "react-bootstrap";
 
 type TestValue = {
   value1: string;
@@ -17,7 +17,7 @@ const LocalStoragePage = () => {
   const [test2, setTest2, deleteTest2] = useLocalStorage("test2", "テスト");
 
   return (
-    <>
+    <Container>
       <h1>Local Storage</h1>
       <h2>オブジェクトの保存</h2>
       <p>
@@ -45,7 +45,7 @@ const LocalStoragePage = () => {
         ></Form.Control>
       </Form>
       <Button onClick={() => deleteTest2()}>削除</Button>
-    </>
+    </Container>
   );
 };
 export default LocalStoragePage;
