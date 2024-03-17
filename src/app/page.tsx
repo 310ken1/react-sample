@@ -10,7 +10,7 @@ export default function Home() {
         <h1>React Bootstrap</h1>
         <Link href="/grid">Grid Systemサンプル</Link>
         <h1>Local Storage</h1>
-        <Link href="/localstrage">LocalStorageサンプル</Link>
+        <Link href="/localstorage">LocalStorageサンプル</Link>
       </Container>
     </main>
   );
