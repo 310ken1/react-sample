@@ -11,6 +11,8 @@ export default function Home() {
         <Link href="/grid">Grid Systemサンプル</Link>
         <h1>Local Storage</h1>
         <Link href="/localstorage">LocalStorageサンプル</Link>
+        <h1>フック</h1>
+        <Link href="/context">useContextサンプル</Link>
       </Container>
     </main>
   );
