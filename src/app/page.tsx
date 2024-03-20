@@ -13,6 +13,8 @@ export default function Home() {
         <Link href="/localstorage">LocalStorageサンプル</Link>
         <h1>フック</h1>
         <Link href="/context">useContextサンプル</Link>
+        <br />
+        <Link href="/api">カスタムフックによるWebAPIからのデータ取得</Link>
       </Container>
     </main>
   );
