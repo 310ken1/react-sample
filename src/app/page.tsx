@@ -9,6 +9,8 @@ export default function Home() {
       <Container>
         <h1>React Bootstrap</h1>
         <Link href="/grid">Grid Systemサンプル</Link>
+        <br />
+        <Link href="/sidemenu">サイドメニューサンプル</Link>
         <h1>Local Storage</h1>
         <Link href="/localstorage">LocalStorageサンプル</Link>
         <h1>フック</h1>
