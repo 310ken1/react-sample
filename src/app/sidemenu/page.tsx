@@ -10,7 +10,6 @@ import {
   Offcanvas,
   Row,
 } from "react-bootstrap";
-import styles from "./page.module.css";
 
 function SideMenu() {
   const [show, setShow] = useState(false);
