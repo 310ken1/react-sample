@@ -9,12 +9,15 @@ type TestValue = {
 };
 
 const LocalStoragePage = () => {
-  const [test1, setTest1, deleteTest1] = useLocalStorage("test1", {
+  const [test1, getTest1, setTest1, deleteTest1] = useLocalStorage("test1", {
     value1: "aaaaa",
     value2: 12345,
-  } as TestValue);
+  });
 
-  const [test2, setTest2, deleteTest2] = useLocalStorage("test2", "テスト");
+  const [test2, getTest2, setTest2, deleteTest2] = useLocalStorage(
+    "test2",
+    "テスト"
+  );
 
   return (
     <Container>
@@ -28,7 +31,7 @@ const LocalStoragePage = () => {
       <Form>
         <Form.Control
           onChange={(event) =>
-            setTest1({ value1: event.target.value, value2: 9999 } as TestValue)
+            setTest1({ value1: event.target.value, value2: 9999 })
           }
         ></Form.Control>
       </Form>
