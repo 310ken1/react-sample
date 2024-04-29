@@ -23,6 +23,8 @@ export default function Home() {
 
       <p>レンダリング</p>
       <Link href="/rendering">レンダリングの抑止</Link>
+      <br />
+      <Link href="/table">テーブルに行を追加した際のレンダリング抑止</Link>
     </main>
   );
 }
