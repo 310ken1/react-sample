@@ -47,16 +47,16 @@ export default function TablePage() {
   return (
     <>
       <p>
-        更新ボタン押下でレンダリング
+        レンダリングボタン押下でレンダリング
         <br />
         (Showがレンダリングされた場合は時間が更新)
         <br />
-        挿入ボタン押下で行挿入
+        追加ボタン押下で行挿入
         <br />
         (行を挿入しても、既存のTableRowのtimeは更新されない(レンダリングされない))
       </p>
       <Button className="mx-1" onClick={() => setUpdate(update + 1)}>
-        更新
+        レンダリング
       </Button>
       <Button
         className="mx-1"
@@ -66,21 +66,31 @@ export default function TablePage() {
           setDataset([...dataset]);
         }}
       >
-        挿入
-      </Button>
-      <Button className="mx-1" onClick={() => setDataset([...master_dataset])}>
-        クリア
+        追加
       </Button>
       <Button
         className="mx-1"
         onClick={() => {
           // 更新を反映するにはid(key)を変更する
-          dataset[0].id = index++;
-          dataset[0].data1 = "data1-changed";
+          const id = index++;
+          dataset[0].id = id;
+          dataset[0].data1 = `data${id}-1`;
           setDataset([...dataset]);
         }}
       >
-        一行目変更
+        一行目更新
+      </Button>
+      <Button
+        className="mx-1"
+        onClick={() => {
+          dataset.sort((a, b) => b.data1.localeCompare(a.data1));
+          setDataset([...dataset]);
+        }}
+      >
+        ソート
+      </Button>
+      <Button className="mx-1" onClick={() => setDataset([...master_dataset])}>
+        クリア
       </Button>
       <hr />
       <Show />
