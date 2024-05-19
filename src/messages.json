@@ -1,0 +1,32 @@
+{
+    "home":{
+        "bootstrap": {
+            "title": "React Bootstrap",
+            "items": {
+                "grid": "Grid Systemサンプル",
+                "sidemenu": "サイドメニューサンプル"
+            }
+        },
+        "storage": {
+            "title": "Web Storage",
+            "items": {
+                "local": "LocalStorageサンプル",
+                "session": "SessionStorageサンプル"
+            }
+        },
+        "hook": {
+            "title": "フック",
+            "items": {
+                "context": "useContextサンプル",
+                "api": "カスタムフックによるWebAPIからのデータ取得"
+            }
+        },
+        "rendering": {
+            "title": "レンダリング",
+            "items": {
+                "rendering": "レンダリングの抑止",
+                "table": "テーブルに行を追加した際のレンダリング抑止"
+            }
+        }
+    }
+}

@@ -1,32 +1,33 @@
 "use client";
 
 import Link from "next/link";
+import messages from "@/messages.json";
 
 export default function Home() {
   return (
     <main>
-      <p>React Bootstrap</p>
-      <Link href="/grid">Grid Systemサンプル</Link>
+      <p>{messages.home.bootstrap.title}</p>
+      <Link href="/grid">{messages.home.bootstrap.items.grid}</Link>
       <br />
-      <Link href="/sidemenu">サイドメニューサンプル</Link>
+      <Link href="/sidemenu">{messages.home.bootstrap.items.sidemenu}</Link>
       <hr />
 
-      <p>Web Storage</p>
-      <Link href="/localstorage">LocalStorageサンプル</Link>
+      <p>{messages.home.storage.title}</p>
+      <Link href="/localstorage">{messages.home.storage.items.local}</Link>
       <br />
-      <Link href="/sessionstorage">SessionStorageサンプル</Link>
+      <Link href="/sessionstorage">{messages.home.storage.items.session}</Link>
       <hr />
 
-      <p>フック</p>
-      <Link href="/context">useContextサンプル</Link>
+      <p>{messages.home.hook.title}</p>
+      <Link href="/context">{messages.home.hook.items.context}</Link>
       <br />
-      <Link href="/api">カスタムフックによるWebAPIからのデータ取得</Link>
+      <Link href="/api">{messages.home.hook.items.api}</Link>
       <hr />
 
-      <p>レンダリング</p>
-      <Link href="/rendering">レンダリングの抑止</Link>
+      <p>{messages.home.rendering.title}</p>
+      <Link href="/rendering">{messages.home.rendering.items.rendering}</Link>
       <br />
-      <Link href="/table">テーブルに行を追加した際のレンダリング抑止</Link>
+      <Link href="/table">{messages.home.rendering.items.table}</Link>
     </main>
   );
 }
