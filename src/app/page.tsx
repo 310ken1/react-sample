@@ -11,8 +11,10 @@ export default function Home() {
       <Link href="/sidemenu">サイドメニューサンプル</Link>
       <hr />
 
-      <p>Local Storage</p>
+      <p>Web Storage</p>
       <Link href="/localstorage">LocalStorageサンプル</Link>
+      <br />
+      <Link href="/sessionstorage">SessionStorageサンプル</Link>
       <hr />
 
       <p>フック</p>
