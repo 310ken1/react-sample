@@ -10,6 +10,10 @@ export default function Home() {
       <Link href="/grid">{messages.home.bootstrap.items.grid}</Link>
       <br />
       <Link href="/sidemenu">{messages.home.bootstrap.items.sidemenu}</Link>
+      <br />
+      <Link href="/layoutsample">
+        {messages.home.bootstrap.items.layoutsample}
+      </Link>
       <hr />
 
       <p>{messages.home.storage.title}</p>

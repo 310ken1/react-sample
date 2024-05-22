@@ -4,7 +4,8 @@
             "title": "React Bootstrap",
             "items": {
                 "grid": "Grid Systemサンプル",
-                "sidemenu": "サイドメニューサンプル"
+                "sidemenu": "サイドメニューサンプル",
+                "layoutsample": "レイアウトサンプル"
             }
         },
         "storage": {
